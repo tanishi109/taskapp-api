@@ -1,0 +1,69 @@
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4950ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534653884d6173eb03000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 237.7060ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+Processing by ProjectsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.8ms)
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms)
+Processing by ProjectsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2580ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534654494d6173eb3d000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.4230ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6640ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534654f74d6173ec0b000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.5750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4860ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.5ms)
+Processing by ProjectsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms)
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 10ms (Views: 9.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6980ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534655304d6173ec36000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.4340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4590ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 13.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4270ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534655774d6173ec6b000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.5450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5420ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.9ms)
+Processing by ProjectsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6870ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534655c84d6173ecb6000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4660ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4660ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('5346582c4d6173ed84000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.5110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4730ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 9.0ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4050ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('534659794d6173ee31000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.6060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5120ms
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 9.0ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3900ms
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_test collection=projects documents=[{"_id"=>BSON::ObjectId('5346597f4d6173ee3d000000'), "finished"=>false, "title"=>"hoge_title", "detail"=>"hoge_detail"}] flags=[]
+                         COMMAND      database=taskapp_test command={:getlasterror=>1, :w=>1} runtime: 0.4380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_test collection=projects selector={"$query"=>{"title"=>"hoge_title"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4720ms
