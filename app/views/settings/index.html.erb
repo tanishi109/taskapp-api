@@ -7,6 +7,7 @@
         <%= link_to "Setting: "+setting.name, setting_path(setting.id) %>
       </li>
       <li>
+        <%= link_to "編集", edit_setting_path(setting.id) %>
         <%= link_to "削除", setting_path(setting.id), method: :delete, data: { confirm: "are you sure?" } %>
       </li>
     </ul>

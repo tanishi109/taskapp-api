@@ -1,1 +1,1 @@
-json.extract! @project, :title
+json.extract! @setting, :name, :value, :valueType, :description
