@@ -12650,3 +12650,642 @@ Processing by ProjectsController#index as HTML
   MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5230ms
   Rendered projects/index.html.erb within layouts/application (2.7ms)
 Completed 200 OK in 10ms (Views: 9.0ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:44:16 +0900
+Processing by SettingsController#index as HTML
+  Rendered settings/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Projects</h1>
+    2: 
+    3: <% @projects.each do |project| %>
+    4:   <div>
+    5:     <ul>
+    6:       <li>
+  app/views/settings/index.html.erb:3:in `_app_views_settings_index_html_erb___3025408973688104617_70251589927580'
+  app/controllers/settings_controller.rb:5:in `index'
+
+
+  Rendered /Users/MasatoHayakawa/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/MasatoHayakawa/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/MasatoHayakawa/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 8.9640ms
+  Rendered settings/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 195ms (Views: 193.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:01 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:48:03 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6190ms
+  Rendered projects/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 27ms (Views: 11.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3510ms
+  Rendered projects/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:48:49 +0900
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:48:51 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4000ms
+  Rendered settings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 10.3ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:48:53 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4040ms
+  Rendered settings/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3530ms
+  Rendered settings/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:03 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:04 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5410ms
+  Rendered projects/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4160ms
+  Rendered projects/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:12 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5500ms
+  Rendered projects/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:30 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:32 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3710ms
+  Rendered projects/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:49:33 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4060ms
+  Rendered settings/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 8.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:35 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5140ms
+  Rendered projects/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 9.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4290ms
+  Rendered projects/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:49:58 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:50:00 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4450ms
+  Rendered projects/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:50:01 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4570ms
+  Rendered settings/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/settings/new" for 127.0.0.1 at 2014-04-11 10:50:09 +0900
+Processing by SettingsController#new as HTML
+  Rendered settings/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 37ms (Views: 36.1ms)
+
+
+Started POST "/settings" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+Processing by SettingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0t1rDnUX2HHllfz/KCn8K08p6pC9QFyQAzzK1tCLRtQ=", "setting"=>{"name"=>"名前", "value"=>"値", "valueType"=>"文字列", "description"=>"SettingModel追加のテスト"}, "commit"=>"Create Setting"}
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_development collection=settings documents=[{"_id"=>BSON::ObjectId('53474a6a4d61730037000000'), "name"=>"名前", "value"=>"値", "valueType"=>"文字列", "description"=>"SettingModel追加のテスト"}] flags=[]
+                         COMMAND      database=taskapp_development command={:getlasterror=>1, :w=>1} runtime: 37.3750ms
+Redirected to http://localhost:3000/settings
+Completed 302 Found in 41ms
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4230ms
+  Rendered settings/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:50:34 +0900
+
+
+Started GET "/settings/53474a6a4d61730037000000" for 127.0.0.1 at 2014-04-11 10:50:44 +0900
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"53474a6a4d61730037000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4980ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={"_id"=>BSON::ObjectId('53474a6a4d61730037000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4320ms
+  Rendered settings/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 8.5ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4560ms
+  Rendered settings/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:04 +0900
+
+
+Started GET "/settings/53474a6a4d61730037000000" for 127.0.0.1 at 2014-04-11 10:51:05 +0900
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"53474a6a4d61730037000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={"_id"=>BSON::ObjectId('53474a6a4d61730037000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5410ms
+  Rendered settings/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 7.4ms)
+
+
+Started GET "/settings/53474a6a4d61730037000000" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"53474a6a4d61730037000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={"_id"=>BSON::ObjectId('53474a6a4d61730037000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5620ms
+  Rendered settings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:33 +0900
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:51:34 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2760ms
+  Rendered settings/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4050ms
+  Rendered settings/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:35 +0900
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3840ms
+  Rendered settings/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.4ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:51:41 +0900
+
+
+Started GET "/settings/53474a6a4d61730037000000" for 127.0.0.1 at 2014-04-11 10:51:42 +0900
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"53474a6a4d61730037000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={"_id"=>BSON::ObjectId('53474a6a4d61730037000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5250ms
+  Rendered settings/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 8.1ms)
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3560ms
+  Rendered settings/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:10 +0900
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3740ms
+  Rendered settings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 8.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:23 +0900
+
+
+Started GET "/settings/new" for 127.0.0.1 at 2014-04-11 10:52:27 +0900
+Processing by SettingsController#new as HTML
+  Rendered settings/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started POST "/settings" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+Processing by SettingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0t1rDnUX2HHllfz/KCn8K08p6pC9QFyQAzzK1tCLRtQ=", "setting"=>{"name"=>"namae", "value"=>"atai", "valueType"=>"mojiretsu", "description"=>"setsumei"}, "commit"=>"Create Setting"}
+  MOPED: 127.0.0.1:27017 INSERT       database=taskapp_development collection=settings documents=[{"_id"=>BSON::ObjectId('53474af34d61730037010000'), "name"=>"namae", "value"=>"atai", "valueType"=>"mojiretsu", "description"=>"setsumei"}] flags=[]
+                         COMMAND      database=taskapp_development command={:getlasterror=>1, :w=>1} runtime: 0.7130ms
+Redirected to http://localhost:3000/settings
+Completed 302 Found in 3ms
+
+
+Started GET "/settings" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+Processing by SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4100ms
+  Rendered settings/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/settings.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/settings.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:52:51 +0900
+
+
+Started GET "/settings/53474af34d61730037010000" for 127.0.0.1 at 2014-04-11 10:52:57 +0900
+Processing by SettingsController#show as HTML
+  Parameters: {"id"=>"53474af34d61730037010000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=settings selector={"_id"=>BSON::ObjectId('53474af34d61730037010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3820ms
+  Rendered settings/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 6.7ms)

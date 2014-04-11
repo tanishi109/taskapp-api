@@ -1,22 +1,16 @@
-<h1>Projects</h1>
+<h1>Setting</h1>
 
-<% @projects.each do |project| %>
+<% @settings.each do |setting| %>
   <div>
     <ul>
       <li>
-        title: <%= link_to project.title, project_path(project.id) %>
+        <%= link_to "Setting: "+setting.name, setting_path(setting.id) %>
       </li>
       <li>
-        detail: <%= project.detail %>
-      </li>
-      <li>
-        finished: <%= project.finished %>
-      </li>
-      <li>
-        <%= link_to "削除", project_path(project.id), method: :delete, data: { confirm: "are you sure?" } %>
+        <%= link_to "削除", setting_path(setting.id), method: :delete, data: { confirm: "are you sure?" } %>
       </li>
     </ul>
   </div>
 <% end %>
 
-<p><%= link_to "追加", new_project_path %><p>
+<p><%= link_to "追加", new_setting_path %><p>

@@ -1,20 +1,30 @@
 <h1>追加</h1>
 
 
-<%= form_for @project do |f| %>
+<%= form_for @setting do |f| %>
 
 <p>
-  <%= f.label :title %><br>
-  <%= f.text_field :title %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
 </p>
 
 <p>
-  <%= f.label :detail %><br>
-  <%= f.text_field :detail %>
+  <%= f.label :value %><br>
+  <%= f.text_field :value %>
 </p>
 
 <p>
-  <%= f.submit("追加する") %>
+  <%= f.label :valueType %><br>
+  <%= f.text_field :valueType %>
+</p>
+
+<p>
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
+</p>
+
+<p>
+  <%= f.submit %>
 </p>
 
 <% end %>
