@@ -12606,3 +12606,47 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-10 17:21:5
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-10 17:21:54 +0900
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 6.4400ms
+  Rendered projects/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 81ms (Views: 45.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-11 10:19:22 +0900
+
+
+Started GET "/projects/53451a714d6173c769030000" for 127.0.0.1 at 2014-04-11 10:19:26 +0900
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"53451a714d6173c769030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={"_id"=>BSON::ObjectId('53451a714d6173c769030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 6.1660ms
+  Rendered projects/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 9.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-11 10:19:27 +0900
+Processing by ProjectsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=taskapp_development collection=projects selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5230ms
+  Rendered projects/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.0ms)
