@@ -43,6 +43,6 @@ RSpec.configure do |config|
 
 
   config.before(:all) do
-    FactoryGirl.reload
+#    FactoryGirl.reload
   end
 end
