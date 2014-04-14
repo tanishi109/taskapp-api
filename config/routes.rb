@@ -1,6 +1,7 @@
 Taskapp::Application.routes.draw do
 
   resources :projects
+  resources :settings
 
   root 'projects#index'
 
